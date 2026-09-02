@@ -6,7 +6,7 @@ rettTall = random.randint(0, 1000)
 for x in range (10):
     gjett = int(input("gjett et tall mellom 0 og 1000: "))
     if gjett == rettTall:
-        print("yay, du gjettet riktig!")
+        print("yay")
         break
     elif gjett < rettTall:
         print("høyere!")
