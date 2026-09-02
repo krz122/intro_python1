@@ -1,4 +1,15 @@
-#for-loops
+import random
+#gjette spill
+rettTall = random.randint(0, 1000)
 
-for num in range(1,10):
-    print(num)
+#10forsøk 
+for x in range (10):
+    gjett = int(input("gjett et tall mellom 0 og 1000: "))
+    if gjett == rettTall:
+        print("yay, du gjettet riktig!")
+        break
+    elif gjett < rettTall:
+        print("høyere!")
+    else:
+        print("lavere!")
+    print("du har", 9 - x, "forsøk igjenn")
