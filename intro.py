@@ -1,8 +1,10 @@
-run = True
-count = 0
-while run:
-    print("hello")
-    if count > 10:
-        run = False
+mat = ["pizza", "kebab", "pasta"]
 
-    count =+ 5
+print(mat[0])
+print(mat[-1])
+
+mat.append("suppe")
+
+mat.remove("kebab")
+
+print(len(mat))
