@@ -1,44 +1,21 @@
-handleliste = []
+def hei():
+    print("Hei, jeg lærer Python!")
 
-while True:
-    print("--- HANDLELISTE ---")
-    print("1. Legg til vare")
-    print("2. Se handleliste")
-    print("3. Fjern vare")
-    print("4. Avslutt")
-    print("")
-    valg = input("Velg: ")
 
-    if valg == "1":
-        vare = input("Hva vil du legge til? ")
-        handleliste.append(vare)
-        print("")
-        print("Varen er lagt til")
-        print("")
+def gang_med_to(tall):
+    print(tall * 2)
 
-    elif valg == "2":
-        for vare in handleliste:
-            print(vare)
-            print("")
 
-    elif valg == "3":
-        vare = input("Hva vil du fjerne? ")
+def sum_to_tall(tall1, tall2):
+    return tall1 + tall2
 
-        if vare in handleliste:
-            handleliste.remove(vare)
-            print("")
-            print("Varen er fjernet")
-            print("")
-        else:
-            print("")
-            print("Varen finnes ikke.")
-            print("")
 
-    elif valg == "4":
-        print("Ha det")
-        print("")
-        break
+hei()
 
-    else:
-        print("Feil valg")
-        print("")
+gang_med_to(5)
+gang_med_to(10)
+gang_med_to(7)
+
+print(sum_to_tall(3, 4))
+print(sum_to_tall(10, 20))
+print(sum_to_tall(2.5, 4.5))
