@@ -1,10 +1,44 @@
-mat = ["pizza", "kebab", "pasta"]
+handleliste = []
 
-print(mat[0])
-print(mat[-1])
+while True:
+    print("--- HANDLELISTE ---")
+    print("1. Legg til vare")
+    print("2. Se handleliste")
+    print("3. Fjern vare")
+    print("4. Avslutt")
+    print("")
+    valg = input("Velg: ")
 
-mat.append("suppe")
+    if valg == "1":
+        vare = input("Hva vil du legge til? ")
+        handleliste.append(vare)
+        print("")
+        print("Varen er lagt til")
+        print("")
 
-mat.remove("kebab")
+    elif valg == "2":
+        for vare in handleliste:
+            print(vare)
+            print("")
 
-print(len(mat))
+    elif valg == "3":
+        vare = input("Hva vil du fjerne? ")
+
+        if vare in handleliste:
+            handleliste.remove(vare)
+            print("")
+            print("Varen er fjernet")
+            print("")
+        else:
+            print("")
+            print("Varen finnes ikke.")
+            print("")
+
+    elif valg == "4":
+        print("Ha det")
+        print("")
+        break
+
+    else:
+        print("Feil valg")
+        print("")
