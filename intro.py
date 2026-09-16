@@ -31,7 +31,7 @@ while True:
             print("")
         else:
             print("")
-            print("Varen finnes ikke.")
+            print("Varen finnes ikke")
             print("")
 
     elif valg == "4":
